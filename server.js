@@ -121,7 +121,7 @@ function setup()
 
    // Template system setup
    swig.setDefaults({
-	 autoescape: false
+	 autoescape:  true
     });
 
    var server = app.listen(8080);
