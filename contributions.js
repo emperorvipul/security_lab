@@ -62,9 +62,9 @@ function displayContributions1(req,res,next,sts,err,data)
 function handleContributionsUpdate(req,res,next)
 {
    // convert to numbers
-   var preTax = eval(req.body.preTax);
-   var afterTax = eval(req.body.afterTax);
-   var roth = eval(req.body.roth);
+   var preTax = parseInt(req.body.preTax);
+   var afterTax = parseInt(req.body.afterTax);
+   var roth = parseInt(req.body.roth);
 
    var userId = req.session.userId;
 

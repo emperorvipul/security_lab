@@ -269,7 +269,7 @@ function validateSignup(username,firstname,lastname,password,verify,email,errors
    var FNAME_RE = /^.{1,100}$/;
    var LNAME_RE = /^.{1,100}$/;
    var EMAIL_RE = /^[\S]+@[\S]+\.[\S]+$/;
-   var PASS_RE = /^.{1,20}$/;
+   var PASS_RE = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{9,}$/;
 
    errors.userNameError = "";
    errors.firstNameError = "";
